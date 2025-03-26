@@ -1,10 +1,13 @@
+const byte myLed = 2;
+const int ledDelay = 500;
+
 void setup() {
-  pinMode(2, OUTPUT);
+  pinMode(myLed, OUTPUT);
 }
 
 void loop() {
-  digitalWrite(2, HIGH);
-  delay(1000);
-  digitalWrite(2, LOW);
-  delay(1000);
+  digitalWrite(myLed, HIGH);
+  delay(ledDelay);
+  digitalWrite(myLed, LOW);
+  delay(ledDelay);
 }
